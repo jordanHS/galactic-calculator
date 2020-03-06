@@ -8,4 +8,8 @@ export class AgeCalculator {
     let age = this.currentYear - this.birthYear;
     return age
   }
+
+  EarthExpectancy() {
+    
+  }
 };

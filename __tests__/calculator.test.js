@@ -15,4 +15,8 @@ describe('AgeCalculator', () => {
    test('should correctly calculate the users age in earth years', () => {
         expect(newCalculator.EarthYears()).toEqual(25);
    });
+
+   test('should determine how many years the user has left on earth', () => {
+          expect(newCalculator.EarthExpectancy()).toEqual(47.6);
+   });
 });
