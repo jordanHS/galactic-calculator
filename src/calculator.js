@@ -18,4 +18,10 @@ export class AgeCalculator {
       return age - expectancy;
     }
   }
+
+  // MercuryYears() {
+  //   const age = this.currentYear - this.birthYear;
+  //   const mercuryAge = age / .24;
+  //   return mercuryAge.toFixed(1);
+  // }
 };
