@@ -4,7 +4,8 @@ export class AgeCalculator {
     this.birthYear = birthYear;
   }
 
-  EarthYear() {
-
+  EarthYears() {
+    let age = this.currentYear - this.birthYear;
+    return age
   }
 };
