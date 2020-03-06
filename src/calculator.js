@@ -3,4 +3,8 @@ export class AgeCalculator {
     this.currentYear = currentYear;
     this.birthYear = birthYear;
   }
-}
+
+  EarthYear() {
+
+  }
+};

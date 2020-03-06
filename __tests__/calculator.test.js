@@ -1,12 +1,18 @@
 import { AgeCalculator } from './../src/calculator.js'
 
 describe('AgeCalculator', () => {
+  var newCalculator;
 
-    test('should correctly create a calculator with current year & birth year properties', () => {
-        var calculator = new AgeCalculator(2020,1995);
-        expect(calculator.currentYear).toEqual(2020);
-        expect(calculator.birthYear).toEqual(1995);
+  beforeEach(() => {
+    newCalculator = new AgeCalculator(2020, 1995);
+  });
+    
+  test('should correctly create a calculator with current year & birth year properties', () => {
+        expect(newCalculator.currentYear).toEqual(2020);
+        expect(newCalculator.birthYear).toEqual(1995);
     });
     
-   
+   test('should correctly calculate the users age in earth years', () => {
+        expect(newCalculator.EarthYear()).toEqual(25);
+   });
 });
