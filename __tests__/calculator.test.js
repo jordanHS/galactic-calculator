@@ -26,5 +26,9 @@ describe('AgeCalculator', () => {
 
    test('should determine the users life expectancy on mercury', () => {
           expect(newCalculator.MercuryExpectancy()).toEqual(200);
-   })
+   });
+
+   test('should calculate users age in venus years', () => {
+          expect(newCalculator.MercuryExpectancy()).toEqual(40);
+   });
 });
