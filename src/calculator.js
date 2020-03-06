@@ -55,4 +55,22 @@ export class AgeCalculator {
       return venusAge - expectancy;
     }
   }
+
+ MarsYears() {
+   const age = this.currentYear - this.birthYear;
+   const marsAge = age / 1.88;
+   return Math.floor(marsAge);
+ }
+
+ MarsExpectancy() {
+   const age = this.currentYear - this.birthYear;
+   const marsAge = age / 1.88;
+   let expectancy = 38.6;
+   let userExpectancy = expectancy - marsAge;
+   if (marsAge < expectancy) {
+     return Math.ceil(userExpectancy);
+   } else {
+     return marsAge - expectancy;
+   }
+ }
 };
