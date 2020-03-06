@@ -33,6 +33,6 @@ describe('AgeCalculator', () => {
    });
 
    test('should determine the user life expectancy on venus', () => {
-          expect(newCalculator.venusExpectancy()).toEqual(113)
+          expect(newCalculator.VenusExpectancy()).toEqual(76)
    })
 });
