@@ -91,4 +91,8 @@ export class AgeCalculator {
     return JupiterYears - expectancy;
    }
  }
+
+ KeithRichards() {
+   
+ }
 };

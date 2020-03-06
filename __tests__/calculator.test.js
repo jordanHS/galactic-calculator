@@ -51,4 +51,8 @@ describe('AgeCalculator', () => {
    test('should determine the users life expectancy on jupiter', () => {
           expect(newCalculator.JupiterExpectancy()).toEqual(4);
    });
-});
+
+   test('should determine Keith Richards age in dog years', () => {
+          expect(newCalculator.KeithRichards()).toEqual(54);
+   });
+  });
