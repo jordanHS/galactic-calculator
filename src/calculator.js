@@ -11,9 +11,10 @@ export class AgeCalculator {
 
   EarthExpectancy() {
    const age = this.currentYear - this.birthYear;
-    let expectancy = 73;
+    let expectancy = 72.6;
+    let userExpectancy = expectancy - age;
     if (age < expectancy) {
-    return expectancy - age;
+    return Math.ceil(userExpectancy);
     } else {
       return age - expectancy;
     }
@@ -22,10 +23,18 @@ export class AgeCalculator {
   MercuryYears() {
     const age = this.currentYear - this.birthYear;
     const mercuryAge = age / .24;
-    return Math.ceil(mercuryAge * 100)/ 100;
+    return Math.floor(mercuryAge);
   }
 
-  // MercuryExpectancy() {
-
-  // }
+  MercuryExpectancy() {
+    const age = this.currentYear - this.birthYear;
+    const mercuryAge = age / .24;
+    let expectancy = 304.17;
+    let userExpectancy = expectancy - mercuryAge;
+    if (mercuryAge < expectancy) {
+      return Math.floor(userExpectancy);
+    } else {
+      return mercuryAge - expectancy;
+    }
+  }
 };

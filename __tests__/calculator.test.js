@@ -21,6 +21,10 @@ describe('AgeCalculator', () => {
    });
 
    test('should calculate users age in mercury years', () => {
-          expect(newCalculator.MercuryYears()).toEqual(104.17);
+          expect(newCalculator.MercuryYears()).toEqual(104);
    });
+
+   test('should determine the users life expectancy on mercury', () => {
+          expect(newCalculator.MercuryExpectancy()).toEqual(200);
+   })
 });
