@@ -31,4 +31,8 @@ describe('AgeCalculator', () => {
    test('should calculate users age in venus years', () => {
           expect(newCalculator.VenusYears()).toEqual(40);
    });
+
+   test('should determine the user life expectancy on venus', () => {
+          expect(newCalculator.venusExpectancy()).toEqual(113)
+   })
 });

@@ -43,4 +43,16 @@ export class AgeCalculator {
     const venusAge = age / .62;
     return Math.floor(venusAge);
   }
+
+  // VenusExpectancy() {
+  //   const age = this.currentYear - this.birthYear;
+  //   const venusAge = age / .62;
+  //   let expectancy = 117.1;
+  //   let userExpectancy = expectancy - venusAge;
+  //   if (venusAge < expectancy) {
+  //     return Math.floor(userExpectancy);
+  //   } else {
+  //     return venusAge - expectancy;
+  //   }
+  // }
 };
