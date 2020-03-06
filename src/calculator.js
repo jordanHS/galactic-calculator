@@ -97,6 +97,8 @@ export class AgeCalculator {
    const keithYear = 1943;
    const keithAge = hypoYear - keithYear;
    let dogYears = keithAge * 5;
-   return dogYears;
+   let jupiterDogYears  = dogYears / 11.86;
+   return Math.ceil(jupiterDogYears);
  }
+
 };

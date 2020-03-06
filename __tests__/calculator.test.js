@@ -52,7 +52,7 @@ describe('AgeCalculator', () => {
           expect(newCalculator.JupiterExpectancy()).toEqual(4);
    });
 
-   test('should determine Keith Richards age in dog years', () => {
-          expect(newCalculator.KeithRichards()).toEqual(650);
+   test('should determine Keith Richards age in dog years on Jupiter', () => {
+          expect(newCalculator.KeithRichards()).toEqual(55);
    });
   });
