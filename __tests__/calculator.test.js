@@ -29,6 +29,6 @@ describe('AgeCalculator', () => {
    });
 
    test('should calculate users age in venus years', () => {
-          expect(newCalculator.MercuryExpectancy()).toEqual(40);
+          expect(newCalculator.VenusYears()).toEqual(40);
    });
 });

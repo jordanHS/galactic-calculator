@@ -37,4 +37,10 @@ export class AgeCalculator {
       return mercuryAge - expectancy;
     }
   }
+
+  VenusYears() {
+    const age = this.currentYear - this.birthYear;
+    const venusAge = age / .62;
+    return Math.floor(venusAge);
+  }
 };
