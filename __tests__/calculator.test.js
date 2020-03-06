@@ -44,11 +44,11 @@ describe('AgeCalculator', () => {
           expect(newCalculator.MarsExpectancy()).toEqual(26);
    });
 
-   test('should calculate the users age in jupiter ears', () => {
+   test('should calculate the users age in jupiter years', () => {
           expect(newCalculator.JupiterYears()).toEqual(2);
    });
 
-  //  test('should determine the users life on jupiter', () => {
-  //         expect(newCalculator.JupiterExpectancy()).toEqual(4);
-  //  });
+   test('should determine the users life on jupiter', () => {
+          expect(newCalculator.JupiterExpectancy()).toEqual(4);
+   });
 });
