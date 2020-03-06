@@ -93,6 +93,10 @@ export class AgeCalculator {
  }
 
  KeithRichards() {
-   
+   const hypoYear = 2073;
+   const keithYear = 1943;
+   const keithAge = hypoYear - keithYear;
+   let dogYears = keithAge * 5;
+   return dogYears;
  }
 };

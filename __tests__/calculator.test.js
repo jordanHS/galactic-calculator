@@ -53,6 +53,6 @@ describe('AgeCalculator', () => {
    });
 
    test('should determine Keith Richards age in dog years', () => {
-          expect(newCalculator.KeithRichards()).toEqual(54);
+          expect(newCalculator.KeithRichards()).toEqual(650);
    });
   });
