@@ -80,15 +80,15 @@ export class AgeCalculator {
    return Math.floor(jupiterAge);
  }
 
-//  JupiterExpectancy() {
-//    const age = this.currentYear - this.birthYear;
-//    const jupiterAge = age / 11.86;
-//    let expectancy = 6.12;
-//    let userExpectancy = expectancy - jupiterAge;
-//    if (jupiterAge < expectancy) {
-//    return Math.floor(userExpectancy);
-//    } else {
-//      jupiter
-//    }
-//  }
+ JupiterExpectancy() {
+   const age = this.currentYear - this.birthYear;
+   const jupiterAge = age / 11.86;
+   let expectancy = 6.12;
+   let userExpectancy = expectancy - jupiterAge;
+   if (jupiterAge < expectancy) {
+   return Math.floor(userExpectancy);
+   } else {
+    return JupiterYears - expectancy;
+   }
+ }
 };

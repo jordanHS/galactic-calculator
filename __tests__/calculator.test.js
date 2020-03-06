@@ -48,7 +48,7 @@ describe('AgeCalculator', () => {
           expect(newCalculator.JupiterYears()).toEqual(2);
    });
 
-   test('should determine the users life on jupiter', () => {
+   test('should determine the users life expectancy on jupiter', () => {
           expect(newCalculator.JupiterExpectancy()).toEqual(4);
    });
 });
