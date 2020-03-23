@@ -88,7 +88,7 @@ export class AgeCalculator {
    if (jupiterAge < expectancy) {
    return Math.floor(userExpectancy);
    } else {
-    return JupiterYears - expectancy;
+    return jupiterAge - expectancy;
    }
  }
 
@@ -101,4 +101,4 @@ export class AgeCalculator {
    return Math.ceil(jupiterDogYears);
  }
 
-};
+}
